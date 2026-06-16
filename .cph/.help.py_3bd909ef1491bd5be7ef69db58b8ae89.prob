@@ -1,0 +1,1 @@
+{"name":"Local: help","url":"c:\\Users\\arnav\\OneDrive\\Desktop\\cses\\help.py","tests":[{"id":1753431271549,"input":"2\n1\n1\n1 2 5\n3\n1 2 1 0\n2 1 2 2\n1 1 2 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\arnav\\OneDrive\\Desktop\\cses\\help.py","group":"local","local":true}
