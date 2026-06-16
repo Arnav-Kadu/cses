@@ -243,6 +243,11 @@ void solve()
 {
     int n;
     cin >> n;
+    // to keep two knights it very simple 
+    for(int i=1;i<=n;i++){
+        int temp=(i*i-1)*i*i/2;
+        cout<<temp-4LL*(i-1)*(i-2)<<endl;
+    }
 }
 int32_t main()
 {
@@ -250,7 +255,7 @@ int32_t main()
     cin.tie(NULL);
     cout.tie(NULL);
     fast
-    w(t)
+    // w(t)
     {
         solve();
     }

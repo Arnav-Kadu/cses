@@ -241,21 +241,46 @@ void local()
 /****************************************YAHA HAI ASLI MAAL***************************************/
 void solve()
 {
-    string s;
-    cin>>s;
-    int n=s.size();
-    int ans=1;
-    int res=1;
-    for(int i=1;i<n;i++){
-       if(s[i-1]==s[i]){
-        res++;
-       }else{
-        ans=max(res,ans);
-        res=1;
-       }
-    //    ans=max(res,ans);
+    int n;
+    cin >> n;
+    int sum = n*(n+1)/2;
+    if(sum%2){
+        NO;
+        return;
     }
-    cout<<max(ans,res)<<endl;
+    int target_sum=sum/2;
+    YES;
+    vector<int>first,second;
+    if(n%4==0){
+        for(int i=1;i<=n;i+=4){
+            first.push_back(i);
+            first.push_back(i+3);
+
+            second.push_back(i+1);
+            second.push_back(i+2);
+        }
+    }
+    else if(n%4==3){
+        first.push_back(1);
+        first.push_back(2);
+        second.push_back(3);
+
+        for(int i=4;i<=n;i+=4){
+            first.push_back(i);
+            first.push_back(i+3);
+
+            second.push_back(i+1);
+            second.push_back(i+2);
+        }
+    }
+    cout<<first.size()<<endl;
+    for(auto i:first){
+        cout<<i<<" ";
+    }
+    cout<<endl;
+    cout<<second.size()<<endl;
+    for(auto i:second) cout<<i<<" ";
+    cout<<endl;
 }
 int32_t main()
 {
@@ -263,7 +288,7 @@ int32_t main()
     cin.tie(NULL);
     cout.tie(NULL);
     fast
-   // w(t)
+    // w(t)
     {
         solve();
     }
