@@ -1,0 +1,15 @@
+# Competitive Programming Helper (cph) extension files
+.cph/
+
+# Compiled binaries / executables
+*.bin
+*.exe
+*.out
+*.o
+
+# Editor / OS junk
+.claude/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
